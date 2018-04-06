@@ -30,4 +30,17 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    // http
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    // rxjava
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
+
+    // lifecycle
+    implementation "android.arch.lifecycle:runtime:1.1.1"
+    implementation "android.arch.lifecycle:viewmodel:1.1.1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
 }
