@@ -1,5 +1,16 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+ext {
+    retrofit2 = '2.4.0'
+    okHttp = '3.10.0'
+    rxJava = '2.1.12'
+    rxAdapter = '1.0.0'
+    rxAndroid = '2.0.2'
+    lifeCycle = '1.1.1'
+    anko = '0.10.4'
+}
+
+
 buildscript {
     ext.kotlin_version = '1.2.31'
     repositories {

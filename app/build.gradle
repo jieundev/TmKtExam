@@ -32,18 +32,20 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     // anko
-    implementation 'org.jetbrains.anko:anko-appcompat-v7-commons:0.10.4'
+    implementation "org.jetbrains.anko:anko-appcompat-v7-commons:$anko"
 
     // http
-    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2"
+    implementation "com.squareup.okhttp3:okhttp:$okHttp"
 
     // rxjava
-    implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
+    implementation "io.reactivex.rxjava2:rxjava:$rxJava"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$rxAdapter"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid"
 
     // lifecycle
-    implementation "android.arch.lifecycle:runtime:1.1.1"
-    implementation "android.arch.lifecycle:viewmodel:1.1.1"
-    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+    implementation "android.arch.lifecycle:runtime:$lifeCycle"
+    implementation "android.arch.lifecycle:viewmodel:$lifeCycle"
+    annotationProcessor "android.arch.lifecycle:compiler:$lifeCycle"
 }
