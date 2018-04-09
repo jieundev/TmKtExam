@@ -4,6 +4,12 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+def getAPIKey(){
+    Properties prop = new Properties()
+    prop.load(project.rootProject.file("local.properties").newDataInputStream())
+    return prop.getProperty("api_key")
+}
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -13,6 +19,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "API_KEY", "\""+getAPIKey()+"\""
     }
     buildTypes {
         release {
